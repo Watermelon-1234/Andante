@@ -1,7 +1,7 @@
 #import <UIKit/UIKit.h>
 #import "SUMusicControlButton.h"
 
-@interface SUNowPlayingControlsView : UIView
+@interface ANChatControlsView : UIView
 
 @property (nonatomic, assign) BOOL paused;
 

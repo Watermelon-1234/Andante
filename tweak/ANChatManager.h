@@ -1,10 +1,10 @@
 #import <UIKit/UIKit.h>
 #import "SBUIActiveOrientationObserver.h"
-#import "SUNowPlayingWindow.h"
+#import "ANChatWindow.h"
 
-@interface SUNowPlayingManager : NSObject <SBUIActiveOrientationObserver>
+@interface ANChatManager : NSObject <SBUIActiveOrientationObserver>
 
-@property (nonatomic, retain) SUNowPlayingWindow *window;
+@property (nonatomic, retain) ANChatWindow *window;
 @property (nonatomic, assign) BOOL enabled;
 
 + (instancetype)sharedManager;

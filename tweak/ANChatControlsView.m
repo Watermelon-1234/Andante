@@ -1,7 +1,7 @@
-#import "SUNowPlayingControlsView.h"
+#import "ANChatControlsView.h"
 #import <MediaRemote/MediaRemote.h>
 
-@implementation SUNowPlayingControlsView
+@implementation ANChatControlsView
 
 - (instancetype)init {
 	self = [super init];

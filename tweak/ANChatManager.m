@@ -1,9 +1,9 @@
-#import "SUNowPlayingManager.h"
+#import "ANChatManager.h"
 
-@implementation SUNowPlayingManager
+@implementation ANChatManager
 
 + (instancetype)sharedManager {
-    static SUNowPlayingManager *sharedManager = nil;
+    static ANChatManager *sharedManager = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         sharedManager = [[self alloc] init];
@@ -19,7 +19,7 @@
 	if (self.enabled) self.window.hidden = NO;
 }
 
-- (void)setWindow:(SUNowPlayingWindow *)window {
+- (void)setWindow:(ANChatWindow *)window {
 	_window = window;
 	self.window.manager = self;
 	[self.window orientationDidChangeToOrientation:window.windowScene.interfaceOrientation];

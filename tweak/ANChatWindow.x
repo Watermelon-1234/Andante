@@ -1,9 +1,9 @@
-#import "SUNowPlayingWindow.h"
-#import "SUNowPlayingManager.h"
-#import "SUNowPlayingViewController.h"
+#import "ANChatWindow.h"
+#import "ANChatManager.h"
+#import "ANChatViewController.h"
 
-%subclass SUNowPlayingWindow : SBSecureWindow
-%property (nonatomic, retain) SUNowPlayingManager *manager;
+%subclass ANChatWindow : SBSecureWindow
+%property (nonatomic, retain) ANChatManager *manager;
 
 // iOS 16-17
 - (instancetype)initWithWindowScene:(UIWindowScene *)scene role:(id)role debugName:(NSString *)name {

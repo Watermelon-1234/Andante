@@ -1,7 +1,7 @@
-#import "SUNowPlayingViewController.h"
+#import "ANChatViewController.h"
 #import <MediaRemote/MediaRemote.h>
-#import "SUNowPlayingManager.h"
-#import "SUNowPlayingWindow.h"
+#import "ANChatManager.h"
+#import "ANChatWindow.h"
 #import "UIStatusBar.h"
 #import <rootless.h>
 
@@ -19,7 +19,7 @@
 #define TOP 0
 #define BOTTOM 1
 
-@implementation SUNowPlayingViewController
+@implementation ANChatViewController
 
 - (instancetype)init {
 	self = [super init];
@@ -38,7 +38,7 @@
 		self.useNotchedLayout = statusBarHeight > 20;
 		self.nowPlayingApp = @"com.apple.Music";
 
-		self.bannerView = [[SUNowPlayingBanner alloc] initWithNotchedLayout:self.useNotchedLayout];
+		self.bannerView = [[ANChatBanner alloc] initWithNotchedLayout:self.useNotchedLayout];
 		self.bannerView.translatesAutoresizingMaskIntoConstraints = NO;
 		[self.view addSubview:self.bannerView];
 
@@ -269,10 +269,10 @@
 	[self nowPlayingUpdate:fakeMusicInfo];
 }
 
-- (void)setNowPlayingApp:(NSString *)nowPlayingApp {
-	_nowPlayingApp = nowPlayingApp;
-	self.bannerView.nowPlayingAppIdentifier = nowPlayingApp;
-}
+// - (void)setNowPlayingApp:(NSString *)nowPlayingApp {
+// 	_nowPlayingApp = nowPlayingApp;
+// 	self.bannerView.nowPlayingAppIdentifier = nowPlayingApp;
+// }
 
 - (void)setLocation:(NSInteger)location {
 	_location = location;

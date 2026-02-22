@@ -1,13 +1,13 @@
 #import <UIKit/UIKit.h>
-#import "SUNowPlayingBanner.h"
+#import "ANChatBanner.h"
 
-@class SUNowPlayingWindow;
+@class ANChatWindow;
 
-@interface SUNowPlayingViewController : UIViewController
+@interface ANChatViewController : UIViewController
 
-@property (nonatomic, assign) SUNowPlayingWindow *window;
+@property (nonatomic, assign) ANChatWindow *window;
 
-@property (nonatomic, strong) SUNowPlayingBanner *bannerView;
+@property (nonatomic, strong) ANChatBanner *bannerView;
 
 @property (nonatomic, assign) BOOL useNotchedLayout;
 @property (nonatomic, assign) CGFloat bannerInset;

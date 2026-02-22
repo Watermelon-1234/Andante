@@ -1,12 +1,9 @@
-Package: xyz.skitty.sushi
-Name: Sushi
-Version: 1.0.1
+Package: com.idoitmelon.andante
+Name: andante
+Version: 0.0.1
 Architecture: iphoneos-arm
-Description: Now playing banner with integrated media controls!
-Maintainer: Skitty
-Author: Skitty
+Description: A tweak aim to utilize Ai as a enchanced assistant for iOS.
+Maintainer: idoit_melon
+Author: idoit_melon
 Section: Tweaks
-Depends: mobilesubstrate, firmware (>= 13.0)
-Icon: https://skitty.xyz/repo/icons/xyz.skitty.sushi.png
-Depiction: https://skitty.xyz/repo/depictions/xyz.skitty.sushi/
-SileoDepiction: https://skitty.xyz/repo/depictions/xyz.skitty.sushi/sileo.json
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader (>= 2.2.3)
